@@ -4,7 +4,7 @@ from EA import EA
 def main():
     problem = "TSP"
     filename = "qa194.tsp"
-    parent_selection = "tournament_selection_2"
+    parent_selection = "random"
     survivor_selection = "truncation"
     pop_size = 200
     offspring_size = 40
