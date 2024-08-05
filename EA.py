@@ -48,8 +48,8 @@ class EA:
                 survivors = survivor_selection_function(s=True)
                 self.instance.population = survivors
                 top_solution_generation = min(self.instance.population, key=lambda x: x[1])
-                print("Generation: ", j + 1)
-                print("Top solution for this iteration: ", top_solution_generation[1])  # Print the fitness value
+                if j == self.instance.generations - 1:
+                    print(f"Iteration: {i + 1}, Top solution for last generation: {top_solution_generation[1]}")  # Print the fitness value of the last generation
                 top_solution_iteration = min(top_solution_iteration, top_solution_generation[1])  # Store fitness value only
             generation_scores.append(generation_scores_iteration)  # Append the list of scores for the current iteration
             top_solutions.append((None, top_solution_iteration))  # Append the fitness value only

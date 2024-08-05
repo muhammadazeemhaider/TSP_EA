@@ -6,10 +6,10 @@ def main():
     filename = "qa194.tsp"
     parent_selection = "tournament_selection_2"
     survivor_selection = "truncation"
-    pop_size = 30
-    offspring_size = 10
-    generations_no = 50
-    mutation_rate = 0.5
+    pop_size = 200
+    offspring_size = 30
+    generations_no = 10000
+    mutation_rate = 0.35
     iterations = 5
     EA(pop_size, offspring_size, generations_no, mutation_rate, iterations, problem, parent_selection, survivor_selection, filename).run()
 
