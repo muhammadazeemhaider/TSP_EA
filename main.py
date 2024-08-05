@@ -7,7 +7,7 @@ def main():
     parent_selection = "tournament_selection_2"
     survivor_selection = "truncation"
     pop_size = 200
-    offspring_size = 30
+    offspring_size = 40
     generations_no = 10000
     mutation_rate = 0.35
     iterations = 5
