@@ -6,8 +6,8 @@ def main():
     filename = "qa194.tsp"
     parent_selection = "random"
     survivor_selection = "truncation"
-    pop_size = 200
-    offspring_size = 40
+    pop_size = 20
+    offspring_size = 4
     generations_no = 10000
     mutation_rate = 0.35
     iterations = 5
